@@ -82,20 +82,52 @@
     }
 }
 
+@media screen and (max-width: 667px) {
+    .background h1 {
+        font-size: 28px;
+    }
+    .background .logo {
+        width: 120px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .background h1 {
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .background span.descr {
+        font-size: 15px;
+        line-height: 22px;
     }
     .section h2 {
         font-size: 26px;
     }
 }
 
+@media screen and (max-width: 385px) {
+    .btnwhite, .icomail input {
+        width: 100%;
+    }
+    .btnwhite {
+        margin-top: 8px;
+    }
+    .icomail input {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 320px) {
+    .background logo {
+        width: 90px;
+    }
     .background h1 {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .background span.descr {
+        font-size: 13px;
+        line-height: 18px;
     }
 }
 
@@ -123,11 +155,11 @@
     }
 }
 
-@media only screen and (max-width: 667px) {
-    .background h1 {
-        font-size: 28px;
-    }
-    .background .logo {
-        width: 120px;
-    }
+@media (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 192dpi)and max-width:640px){
+
+}
+
+/* samsung s7 landscape*/
+@media (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 192dpi){
+
 }
