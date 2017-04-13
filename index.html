@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Malt Affair - A Whisky Marketplace & Community</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--Contdown css-->
+  <link href="css/soon.min.css" rel="stylesheet">
+  <!--Preloader-->
+  <link rel="stylesheet" type="text/css" href="css/royal_preloader.min.css">
+  <!--Siding contnent-->
+  <link href="css/pushy.css" rel="stylesheet">
+  <!--Adaptive css (adaptive)-->
+  <link href="css/adaptive.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script src="https://use.typekit.net/iuh6exg.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <![endif]-->
+  
+
+</head>
+
+<body class="royal_preloader"> <div id="royal_preloader"></div>
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+  <!--First section block-->
+  <div class="background">
+    <div class="container">
+      <div class="vcentr">
+        <div class="col-xs-12">
+          <img src="img/logo.png" class="logo" alt="The Malt Affair Logo">
+          <h1>Purveyors of exquisite whisky</h1>
+          <span class="descr">The Malt Affair is Singapore's first whisky marketplace and community by maltheads, for maltheads. Join us for our beta launch and stand a chance to win a bottle of Chichibu 2011 for LMDW cask 1401 61.3%!</span>
+            <div class="row">
+                <form action="subs.php" method="post" onsubmit="return onFormSubmit(this);">
+                    <div class="icomail"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="text" name="email" placeholder="Enter your E-Mail" required="required">
+                    </div>
+                    <button class="btnwhite">Submit</button>
+                </form>
+            </div>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/The-Malt-Affair-1296073480429960/" data-toggle="tooltip" title="Visit Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" data-toggle="tooltip" title="Visit Twitter page"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" data-toggle="tooltip" title="Visit Instagram page"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--Bootstrap 3 js-->
+  <script src="js/bootstrap.js"></script>
+  <!--Side content-->
+  <script src="js/pushy.min.js"></script>
+  <!--Preloader-->
+  <script src="js/royal_preloader.min.js"></script>
+  <!--Background-->
+  <script src="js/easyBackground-min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Tooltip -->
+  <script>
+    jQuery(document).ready(function($) {
+            'use strict';
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+  </script>
+
+  <!--Preloader site-->
+  <script type="text/javascript">
+    'use strict';
+        Royal_Preloader.config({
+            mode: 'progress',
+            background: '#0a0a0a',
+            showProgress: true,
+            showPercentage: false
+        });
+  </script>
+  <!--Video Background-->
+  <script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+            'use strict';
+            $('.background').easyBackground({
+                effect: 'video',
+                video: 'youtube:Ehf-78UWL2g',
+                overlay: 'image:url()',
+                wrapNeighbours: true,
+            });
+        });
+  </script>
+</body>
+
+</html>

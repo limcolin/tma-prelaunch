@@ -1,0 +1,711 @@
+
+/*------------------------------------------------------------------
+[Main.css]
+Project:        CO-CO
+Version:        1
+Last change:    01/07/16 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. 01.Basic style
+2. 02.BTN'S
+3. 03.Contdown customs
+4. 04.BASIC BLOCK
+5. 05.Modal notify popup
+6. 06.More info
+-------------------------------------------------------------------*/
+
+
+/* ––––––––––––– 01.Basic style –––––––––––––– */
+/*Fonts*/
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('../fonts/CallunaSansRegular.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/CallunaSansRegular.woff') format('woff'), /* IE6-IE8 */
+    url('../fonts/CallunaSansRegular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/CallunaSansRegular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Montserrat:400,700); /*roboto, montserrat*/
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {width: 100% !important; /*max-width: 1170px;*/}
+
+
+.modal-backdrop {
+    background-color: #00080E;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+* {outline: none;}
+
+.cbp-popup-lightbox {z-index: 99999 !important;}
+
+/*Custom scroll bar*/
+
+::-webkit-scrollbar {
+    width: 3px; /* Width of the vertical scrollbar button */
+    height: 7px; /* Height of the horizontal scrollbar button */
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0px; /* Height of the entiry vertical scrollbar */
+    width: 5px; /* Width of the entiry horizontal scrollbar */
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: none; /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-color: none; /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: none; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #191919; /* Background of Thumb */
+    -webkit-border-radius: 3px; /* Border Radius of the Scrollbar */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #191919; /* Background of Thumb */
+    -webkit-border-radius: 3px; /* Border Radius of the Scrollbar */
+}
+
+
+
+/* ––––––––––––– 02.BTN'S –––––––––––––– */
+/*white btn*/
+.btnwhite {
+    display: inline;
+    padding: 6px 20px;
+    color: #99460E;
+    background: #F1EBE0;
+    font-family: CallunaSansRegular;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.btnwhite:hover, .btnwhite:active, .btnwhite:focus {
+    background: none;
+    transition: 0.3s;
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+}
+
+/*dark btn*/
+.btndark {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 12px 40px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: montserrat;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btndark:hover, .btndark:active, .btndark:focus {
+    background: none;
+    transition: 0.3s;
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* ––––––––––––– 03.Contdown customs –––––––––––––– */
+
+#my-soon-counter .soon-reflection {background-color:#040403;background-image:linear-gradient(#040403 25%,rgba(4,4,3,0));}
+#my-soon-counter {background-position:top;}
+#my-soon-counter {
+    color: #fefdff;
+    text-align: left;
+}
+.soon-group-sub {text-align: center;}
+#my-soon-counter .soon-label {color:#fefdff;}
+#my-soon-counter .soon-ring-progress {background-color:#fefdff;background-color:rgba(254,253,255,0);}
+
+
+
+
+
+/* ––––––––––––– 04.BASIC BLOCK –––––––––––––– */
+.background {
+    height: 100vh;
+    background: none;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+
+.background .button {
+    margin: 5px 22px 40px 0px;
+    display: inline-block;
+}
+
+.background .logo {
+    text-align: center;
+    display: block;
+    margin: 20px 0 0 0;
+    width: 180px;
+}
+
+.background h1 {
+    text-align: left;
+    color: #99460E;
+    font-family: "adobe-caslon-pro",serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.background span.descr {
+    display: block;
+    max-width: 800px;
+    margin: 0px 0px 20px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: CallunaSansRegular;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.background .container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.background ul.social {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.background ul.social li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.background ul.social li:first-child {
+    margin-left: 0px;
+}
+
+.background ul.social li a {
+    background: rgba(255, 255, 255, 0);
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    border-radius: 40px;
+    border: 2px solid #F1EBE0;
+    color: #F1EBE0;
+    transition:0.3s;
+}
+
+.background ul.social li a:hover {
+    background: #F1EBE0;
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    color: #99460E;
+    transition: 0.3s;
+}
+
+.background ul.social li a:hover .fa {
+    color: #99460E;
+}
+
+.vcentr {
+    width: 100%;
+    height: 100%;
+}
+
+.vcentr .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ––––––––––––– 05.Modal notify popup –––––––––––––– */
+
+#not .subs {
+    background: url('../img/01.jpg');
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    max-height: 500px;
+}
+
+#not .subs .bordic {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#not .subs h3 {
+    font-family: montserrat;
+    color: #ffffff;
+    font-weight: 200;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 38px;
+}
+
+#not .subs h3 i {
+    font-style: normal;
+    font-weight: 800;
+}
+
+#not .subs h3 span {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: roboto;
+    display: block;
+    margin: 10px 0px 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+#not .subs .input {
+    width: 70%;
+    text-align: left;
+    float: left;
+}
+
+#not input {
+    width: 100%;
+    padding: 10px 20px 10px 50px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    background: rgba(0, 0, 0, 0.28);
+    height: 48px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: roboto;
+}
+
+.icomail {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: inline;
+}
+
+.icomail i {
+    position: absolute;
+    top: 0px;
+    color: #99460E;
+    font-size: 16px;
+    left: 18px;
+}
+
+.icomail input {
+    background: #F1EBE0;
+    color: #99460E;
+    border-radius: 4px;
+    padding: 6px 40px;
+    margin-right: 8px;
+    font-family: CallunaSansRegular;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #99460E;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #99460E;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #99460E;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #99460E;
+}
+
+#not button {
+    width: 40%;
+    margin: 30px 0px;
+}
+
+
+
+
+
+
+/* ––––––––––––– 06.More info –––––––––––––– */
+.titile {}
+
+.titile h2 {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0px 0px 40px;
+    position: relative;
+}
+
+
+.inblock {padding: 80px 0px;}
+
+.content {}
+
+.content p {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+/*about*/
+.about {
+    background: url('../img/02.jpg');
+    background-size: cover;
+}
+
+.about p {
+    max-width: 650px;
+    color: #1E405F;
+}
+
+
+
+
+/*mainfeatures*/
+
+
+.mainfeatures {
+    background: #191919;
+    background-size: cover;
+}
+
+.mainfeablock {}
+
+.mainfeablock i {
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid #464646;
+    width: 62px;
+    height: 62px;
+    padding-top: 16px;
+    border-radius: 100px;
+    display: block;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.mainfeablock h3 {
+    color: #ffffff;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.mainfeablock span {
+    display: block;
+    text-align: left;
+    font-family: roboto;
+    font-size: 18px;
+    padding: 0px 0px;
+    color: #5A5A5A;
+}
+
+/*portfolio*/
+.portfolio {
+    background: #F3F3F3;
+}
+
+/*team*/
+.team {}
+.user {
+    border: 1px solid #EFEFEF;
+    padding: 20px;
+    border-radius: 3px;
+}
+.user img {
+    width: 80px;
+    border-radius: 100px;
+    display: block;
+}
+.user h4 {
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 20px 0px 12px;
+}
+
+.user h4 span {
+    color: #888888;
+    text-transform: none;
+    display: block;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.user ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.user ul li {
+    list-style: none;
+    display: inline-block;
+}
+.user ul li a {
+    color: #292929;
+    background: #FFFFFF;
+    border: 2px solid #D8D8D8;
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    border-radius: 27px;
+    transition:0.3s;
+}
+.user ul li a:hover {border-color: #292929; transition:0.3s;}
+
+
+/*contacts*/
+.contacts {
+    background: #F3F3F3;
+}
+.contacts .cont {}
+.contacts .cont i {
+    color: #272727;
+    font-size: 24px;
+    display: block;
+    margin: 0px 0px 16px;
+}
+.contacts .cont span {
+    display: block;
+    font-size: 17px;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+
+/*map*/
+.map {
+    height: 350px;
+}
+
+
+/*contact form*/
+.contform {}
+.contform input {
+    width: 100%;
+    height: 50px;
+    padding: 18px;
+    border: 2px solid #17181B;
+    border-radius: 3px;
+    color: #17181b;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition:0.3s;
+}
+.contform textarea {
+    width: 100%;
+    height: 150px;
+    padding: 18px;
+    border: 2px solid #17181B;
+    border-radius: 3px;
+    color: #17181b;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 30px;
+    transition:0.3s;
+}
+.contform input:focus, .contform textarea:focus {
+    background: #F5F5F5;
+    border-color: #E6E6E6;
+    transition:0.3s;
+}
+.contform button {
+    margin-top: 24px;
+    width: 100%;
+}
+.contform button:hover {color: #272727;}
+
+.fa {color:#F1EBE0;}
+/*
+iframe {
+    margin-left: 0!important;
+    margin-top: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .background .container {
+        padding-right: 0;
+        height: 130vh;
+    }
+}
+@media screen and (max-width: 894px) {
+    form .btnwhite, form input {
+        width: 100%;
+        text-align: center;
+    }
+    form .btnwhite {
+        margin-top: 5px;
+    }
+    .background .logo {
+        width: 125px;
+    }
+    .background h1 {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    .background span.descr {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 894px) {
+    .background .logo {
+        width: 110px;
+    }
+    .background h1 {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+    .vcentr {
+        padding-top: 100px;
+    }
+    .background h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .background h1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .background span.desc {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+    .vcentr {
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    }
+    .container {
+        padding-right: 0;
+    }
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+    .vcentr {
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+    }
+}
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+    .background span.descr {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .background h1 {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+    .background span.descr {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .background h1 {
+        font-size: 22px;
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    .background h1 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .btnwhite, .icomail input {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+    .vcentr {
+        width: 100%;
+        height: 100%;
+    }
+}
+*/

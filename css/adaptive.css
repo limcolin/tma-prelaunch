@@ -1,0 +1,133 @@
+@media screen and (max-height: 700px) {
+    .section, .background {
+        height: auto;
+        /*padding: 10px 0px;*/
+    }
+    .section.two {
+        height: auto;
+        padding: 0px 0px;
+    }
+    .section.two .vcentr {
+        margin: 100px 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    #not .subs {
+        height: 400px;
+        background-size: cover;
+    }
+    #not .subs .input {width: 100%;}
+    #not .subs button {width: 100%; position: inherit;}
+}
+
+@media screen and (max-width: 1600px) {
+    .pushy {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .pushy {
+        width: 80%;
+    }
+    .background .logo {
+        width: 140px;
+    }
+    .background .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mainfeablock {
+        margin-bottom: 60px;
+    }
+    .mainfeablock:last-child {
+        margin-bottom: 0px;
+    }
+    .user {
+        margin-bottom: 30px;
+    }
+    .contacts .cont {
+        margin-bottom: 40px;
+    }
+    .contacts .cont:last-child {
+        margin-bottom: 0px;
+    }
+    .contform input {
+        margin-bottom: 30px;
+    }
+    .contform textarea {margin-top: 0px;}
+}
+
+@media screen and (max-width: 768px) {
+    #not .subs {
+        width: 80%;
+        height: 70%;
+    }
+    #not .subs h3 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .icomail {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #not .subs h3 span {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .background h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .section h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .background h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .vcentr {
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .vcentr {
+        padding-top: 250px;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+    .background .logo {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+    .background .logo {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .background h1 {
+        font-size: 28px;
+    }
+    .background .logo {
+        width: 120px;
+    }
+}
