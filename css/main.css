@@ -158,6 +158,11 @@ body {
 
 
 /* ––––––––––––– 04.BASIC BLOCK –––––––––––––– */
+.footnote {
+    font-size: 9px;
+    color: #F1EBE0;
+}
+
 .background {
     height: 100vh;
     background: none;
@@ -194,7 +199,7 @@ body {
     max-width: 800px;
     margin: 0px 0px 20px;
     text-align: left;
-    color: rgba(255, 255, 255, 0.78);
+    color: #F1EBE0;
     font-family: CallunaSansRegular;
     font-size: 16px;
     line-height: 26px;

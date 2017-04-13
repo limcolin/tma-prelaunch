@@ -155,11 +155,40 @@
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 192dpi)and max-width:640px){
-
+@media (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 192dpi) and (max-width:640px){
+    .background logo {
+        width: 90px;
+    }
+    .background h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .background span.descr {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
 
 /* samsung s7 landscape*/
 @media (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 192dpi){
 
+}
+
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-min-device-pixel-ratio : 4)
+and (-webkit-device-pixel-ratio : 4)
+and (orientation: portrait) {
+    .background logo {
+        width: 90px;
+    }
+    .background h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .background span.descr {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }

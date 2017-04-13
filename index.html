@@ -27,7 +27,7 @@
   <script src="https://use.typekit.net/iuh6exg.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <![endif]-->
-  
+
 
 </head>
 
@@ -41,7 +41,7 @@
         <div class="col-xs-12">
           <img src="img/logo.png" class="logo" alt="The Malt Affair Logo">
           <h1>Purveyors of exquisite whisky</h1>
-          <span class="descr">The Malt Affair is Singapore's first whisky marketplace and community by maltheads, for maltheads. Join us for our beta launch and stand a chance to win a bottle of Chichibu 2011 for LMDW cask 1401 61.3%!</span>
+          <span class="descr">The Malt Affair is Singapore's first whisky marketplace and community by maltheads, for maltheads. Join us for our beta launch and stand a chance to win a bottle of Chichibu 2011 for LMDW cask 1401 61.3%! *</span>
             <div class="row">
                 <form action="subs.php" method="post" onsubmit="return onFormSubmit(this);">
                     <div class="icomail"><i class="fa fa-envelope" aria-hidden="true"></i>
@@ -58,11 +58,13 @@
             <li><a href="#" data-toggle="tooltip" title="Visit Instagram page"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
           </ul>
+            <div class="footnote">*Beta launch and giveaway open to persons above 18 years of age and located in Singapore only. By entering your e-mail address above, you consent to the collection and use of your personal data for these purposes.</div>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="js/mobile-chrome-vh-fix.js"></script>
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!--Bootstrap 3 js-->
@@ -81,7 +83,16 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
   </script>
+  <script>
+      var options = [
+          {
+              selector: '.container', // Mandatory, CSS selector
+              vh: 100,  // Mandatory, height in vh units
+          }
+      ];
 
+      var vhFix = new VHChromeFix(options);
+  </script>
   <!--Preloader site-->
   <script type="text/javascript">
     'use strict';
@@ -102,6 +113,8 @@
                 video: 'youtube:Ehf-78UWL2g',
                 overlay: 'image:url()',
                 wrapNeighbours: true,
+                disableMobile: true,
+                baseColor: '#000000',
             });
         });
   </script>
